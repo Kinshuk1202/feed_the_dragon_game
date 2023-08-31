@@ -94,6 +94,8 @@ while running:
     if player_lives == 0:
         screen.blit(game_over_txt,game_over_rect)
         screen.blit(continue_txt,continue_rect)
+        lives_txt = font.render("Lives: " + str(player_lives),True,GREEN,DRGREEN)
+        screen.blit(lives_txt,lives_rect)
         pygame.display.update()
 
         #pause game until player presees any key
